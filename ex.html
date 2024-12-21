@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD BYEING</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        
+        }
+        header {
+            background-image: url('back.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #b4eb76;
+            padding: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #c0df53;
+        }
+        section {
+            padding: 20px;
+        }
+        .search-bar {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 350px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .featured {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .featured-item {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .featured-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .buy-button {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .buy-button:hover {
+            background-color: #e64a19;
+        }
+        .menu-item {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background-color: white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .menu-item img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+        #contact {
+            background-color: #f1f1f1;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 30px auto;
+        }
+        #contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        #contact input, #contact textarea, #contact button {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #contact button {
+            background-color: #21cde4;
+            color: white;
+            cursor: pointer;
+        }
+        #contact button:hover {
+            background-color: #1ba9bd;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>WELCOME TO FOOD BYEING</h1>
+    <p>Your one-stop shop for delicious meals and snacks!</p>
+</header>
+
+<nav>
+    <a href="#featured">Featured</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- Search Bar Section -->
+<section class="search-bar">
+    <input type="text" placeholder="Search for your favorite food..." id="search">
+</section>
+<center>
+<section id="featured">
+    <h2>Featured Items</h2>
+    <div class="featured">
+        <div class="featured-item">
+            <img src="bureger 1.jpg" alt="Delicious Burger">
+            <h3>Juicy Burger</h3>
+            <p>Only RS.600</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        <div class="featured-item">
+            <img src="pizza 1.jpg" alt="Cheesy Pizza">
+            <h3>Cheesy Pizza</h3>
+            <p>Only RS.500</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        <div class="featured-item">
+            <img src="smoothi 1.jpg" alt="Fresh Smoothie">
+            <h3>Fresh Smoothie</h3>
+            <p>Only RS.300</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+    </div>
+</section>
+</center>
+
+<section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-item">
+        <img src="burger 2.jpg" alt="Burger">
+        <p>Burgers - RS.550</p>
+        <button class="buy-button">Buy Now</button>
+    </div>
+    <div class="menu-item">
+        <img src="pizza 2.jpg" alt="Pizza">
+        <p>Pizza - RS.500</p>
+        <button class="buy-button">Buy Now</button>
+    </div>
+    <div class="menu-item">
+        <img src="san veg.jpg" alt="Sandwich">
+        <p>Sandwiches - RS.300</p>
+        <button class="buy-button">Buy Now</button>
+    </div>
+    <div class="menu-item">
+        <img src="salands.jpg" alt="Salad">
+        <p>Salads - RS.100</p>
+        <button class="buy-button">Buy Now</button>
+    </div>
+    <div class="menu-item">
+        <img src="smoothi 1.jpg" alt="Smoothie">
+        <p>Drinks - RS.200</p>
+        <button class="buy-button">Buy Now</button>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: suresh@foodparadise.com</p>
+    <p>Phone: +91 9361329036</p>
+    <p>Address: 123 Food Street, Tasty Town</p>
+</section>
+<center>
+    <section id="feedback" style="font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 8px; max-width: 600px; margin: auto;">
+        <h2 style="text-align: center; color: #333;">Feedback</h2>
+        <form action="submit-form" method="post" style="display: flex; flex-direction: column; gap: 15px;">
+            <input type="text" name="name" placeholder="Your Name" required 
+                   style="padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px;">
+            <input type="email" name="email" placeholder="Your Email" required 
+                   style="padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px;">
+            <textarea name="message" rows="4" placeholder="Your Message" required 
+                      style="padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px;"></textarea>
+            <button type="submit" 
+                    style="background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 4px; font-size: 16px; cursor: pointer;">
+                Send Message
+            </button>
+        </form>
+    </section>
+    
+</center>
+
+<footer>
+    <p>&copy; 2024 Food Paradise. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
